@@ -1,72 +1,123 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: 'Lato', sans-serif;
-  margin: 0;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
 }
 
 .navigation {
-  background-image: url("tmi.jpeg");
-  background-size: cover;
-  background-position: bottom center;
-  width: 100%;
-  height: 700px;
-  color: white;
-  margin: 0;
+    background-image: url("tmi.jpeg");
+    background-size: cover;
+    background-position: bottom center;
+    width: 100%;
+    height: 700px;
+    color: white;
+    margin: 0;
 }
 
 .navigation ul {
-  margin: 0;
+    margin: 0;
 }
 
 .navigation li {
-  display: inline;
-  font-size: 30px;
-  margin: 10px 50px;
-  opacity: 0.75;
+    display: inline;
+    font-size: 30px;
+    margin: 10px 50px;
+    opacity: 0.75;
 }
 
 .navigation a {
-  color: white;
+    color: white;
 }
 
 header {
-  background: linear-gradient(90deg, Aquamarine, SkyBlue);
-  width: 100%;
-  text-align: center;
+    background: linear-gradient(90deg, Aquamarine, SkyBlue);
+    width: 100%;
+    text-align: center;
 }
 
 .band-name {
-  margin: 0;
-  font-size: 50px;
+    margin: 0;
+    font-size: 50px;
 }
 
 header a {
-  color: black;
-  font-size: 30px;
+    color: black;
+    font-size: 30px;
 }
 
-main {
-  background-image: url("handwritten-music.jpeg");
-  background-size: cover;
-  background-position: bottom center;
-  height: 1200px;
-  width: 100%;
-  padding: 50px;
+.demo {
+    background-image: url("handwritten-music.jpeg");
+    background-size: cover;
+    background-position: bottom center;
+    height: 1200px;
+    width: 100%;
+    padding: 50px;
 }
 
 main h1 {
-  margin: 0;
+    margin: 0;
 }
 
 .demo-video-container {
-  text-align: center;
+    text-align: center;
 }
 
 .demo-video {
-  width: 640px;
-  height: 480px;
-  margin: auto auto;
+    width: 640px;
+    height: 480px;
+    margin: auto auto;
+}
+
+.band-summary {
+    font-size: 40px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.roles {
+  font-size: 20px;
+}
+
+.event-table {
+  border: none;
+  font-size: 20px;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  width: 100%;
+}
+
+.event-table tr {
+  vertical-align: top;
+}
+
+.event-table p {
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+}
+
+.event-table-even {
+  background-color: lightgray;
+}
+
+.event-date {
+  font-weight: bold;
+}
+
+.venue-name {
+  font-weight: bold;
+}
+
+.venue-address {
+  font-size: 15px;
+}
+
+.event-cost {
+  font-weight: bold;
 }
