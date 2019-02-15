@@ -82,6 +82,19 @@ main h1 {
   font-size: 20px;
 }
 
+.song-table {
+  border: none;
+  font-size: 20px;
+  text-align: left;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.song-table-even {
+  background-color: lightgray;
+}
+
 .event-table {
   border: none;
   font-size: 20px;
@@ -89,7 +102,6 @@ main h1 {
   max-width: 900px;
   margin: 0 auto;
   padding: 20px;
-  width: 100%;
 }
 
 .event-table tr {
