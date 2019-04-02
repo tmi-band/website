@@ -65,28 +65,40 @@ const venues = {
 
 const events = [
   {
-    "date": "Feb 16",
-    "time": "7:00 - 9:00",
-    "cost": "Free",
-    "venue": venues.hacienda_del_lago
-  },
-  {
-    "date": "Mar 7",
-    "time": "6:00 - 9:00",
+    "date": "Apr 4",
+    "time": "5:30 - 8:30",
     "cost": "Free",
     "venue": venues.macaroni_grill
   },
   {
-    "date": "Mar 9",
+    "date": "Jun 6",
+    "time": "5:30 - 8:30",
+    "cost": "Free",
+    "venue": venues.macaroni_grill
+  },
+  {
+    "date": "Jun 8",
     "time": "7:00 - 9:00",
     "cost": "Free",
     "venue": venues.hacienda_del_lago
   },
   {
-    "date": "Mar 15",
-    "time": "8:00 - 12:00",
-    "cost": "Cover",
-    "venue": venues.house_of_bards
+    "date": "Jul 20",
+    "time": "7:00 - 9:00",
+    "cost": "Free",
+    "venue": venues.hacienda_del_lago
+  },
+  {
+    "date": "Aug 10",
+    "time": "7:00 - 9:00",
+    "cost": "Free",
+    "venue": venues.hacienda_del_lago
+  },
+  {
+    "date": "Sep 21",
+    "time": "7:00 - 9:00",
+    "cost": "Free",
+    "venue": venues.hacienda_del_lago
   }
 ];
 addEvents("event-table", events);
