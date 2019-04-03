@@ -52,7 +52,7 @@ header a {
     background-image: url("handwritten-music.jpeg");
     background-size: cover;
     background-position: bottom center;
-    height: 1200px;
+    height: 100%;
     width: 100%;
     padding: 50px;
 }
