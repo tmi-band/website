@@ -8,7 +8,7 @@ function addEvents(tableId, events) {
 
     // Insert a new row.
     row = tableRef.insertRow(-1);
-    row.className = (index % 2 == 0) ? "event-table-even" : "event-table-odd";
+    row.className = index % 2 == 0 ? "event-table-even" : "event-table-odd";
 
     // Add the event date cell to the row.
     dateCell = row.insertCell(0);
@@ -49,56 +49,50 @@ function addEvents(tableId, events) {
 }
 
 const venues = {
-  "macaroni_grill": {
-    "name": "Macaroni Grill",
-    "address": "5100 E Broadway Blvd, Tucson, AZ"
+  macaroni_grill: {
+    name: "Macaroni Grill",
+    address: "5100 E Broadway Blvd, Tucson, AZ"
   },
-  "hacienda_del_lago": {
-    "name": "Hacienda del Lago Golf Course",
-    "address": "14155 Via Rancho del Lago, Vail, AZ"
+  hacienda_del_lago: {
+    name: "Hacienda del Lago Golf Course",
+    address: "14155 Via Rancho del Lago, Vail, AZ"
   },
-  "house_of_bards": {
-    "name": "House of Bards",
-    "address": "4915 E Speedway Blvd, Tucson, AZ"
+  house_of_bards: {
+    name: "House of Bards",
+    address: "4915 E Speedway Blvd, Tucson, AZ"
   }
-}
+};
 
 const events = [
   {
-    "date": "Apr 4",
-    "time": "5:30 - 8:30",
-    "cost": "Free",
-    "venue": venues.macaroni_grill
+    date: "Jun 6",
+    time: "5:30 - 8:30",
+    cost: "Free",
+    venue: venues.macaroni_grill
   },
   {
-    "date": "Jun 6",
-    "time": "5:30 - 8:30",
-    "cost": "Free",
-    "venue": venues.macaroni_grill
+    date: "Jun 8",
+    time: "7:00 - 9:00",
+    cost: "Free",
+    venue: venues.hacienda_del_lago
   },
   {
-    "date": "Jun 8",
-    "time": "7:00 - 9:00",
-    "cost": "Free",
-    "venue": venues.hacienda_del_lago
+    date: "Jul 20",
+    time: "7:00 - 9:00",
+    cost: "Free",
+    venue: venues.hacienda_del_lago
   },
   {
-    "date": "Jul 20",
-    "time": "7:00 - 9:00",
-    "cost": "Free",
-    "venue": venues.hacienda_del_lago
+    date: "Aug 10",
+    time: "7:00 - 9:00",
+    cost: "Free",
+    venue: venues.hacienda_del_lago
   },
   {
-    "date": "Aug 10",
-    "time": "7:00 - 9:00",
-    "cost": "Free",
-    "venue": venues.hacienda_del_lago
-  },
-  {
-    "date": "Sep 21",
-    "time": "7:00 - 9:00",
-    "cost": "Free",
-    "venue": venues.hacienda_del_lago
+    date: "Sep 21",
+    time: "7:00 - 9:00",
+    cost: "Free",
+    venue: venues.hacienda_del_lago
   }
 ];
 addEvents("event-table", events);
