@@ -48,51 +48,22 @@ function addEvents(tableId, events) {
   }
 }
 
-const venues = {
-  macaroni_grill: {
-    name: "Macaroni Grill",
-    address: "5100 E Broadway Blvd, Tucson, AZ"
-  },
-  hacienda_del_lago: {
-    name: "Hacienda del Lago Golf Course",
-    address: "14155 Via Rancho del Lago, Vail, AZ"
-  },
-  house_of_bards: {
-    name: "House of Bards",
-    address: "4915 E Speedway Blvd, Tucson, AZ"
-  }
-};
+const url = "https://cpsb1m4cnk.execute-api.us-west-2.amazonaws.com/production/events"
+$.ajax({
+    type: "GET",
+    url: url,
+    accepts: {
+      "text json": "application/json"
+    },
+    cache: false,
+    crossDomain: "true",
 
-const events = [
-  {
-    date: "Jun 6",
-    time: "5:30 - 8:30",
-    cost: "Free",
-    venue: venues.macaroni_grill
-  },
-  {
-    date: "Jun 8",
-    time: "7:00 - 9:00",
-    cost: "Free",
-    venue: venues.hacienda_del_lago
-  },
-  {
-    date: "Jul 20",
-    time: "7:00 - 9:00",
-    cost: "Free",
-    venue: venues.hacienda_del_lago
-  },
-  {
-    date: "Aug 10",
-    time: "7:00 - 9:00",
-    cost: "Free",
-    venue: venues.hacienda_del_lago
-  },
-  {
-    date: "Sep 21",
-    time: "7:00 - 9:00",
-    cost: "Free",
-    venue: venues.hacienda_del_lago
-  }
-];
-addEvents("event-table", events);
+    success: function(data) {
+      addEvents("event-table", JSON.parse(data.body).events);
+    },
+    error: function() {
+      alert("An error occurred while trying to retrieve the list of events. "
+            + "If this problem persists, please use the contact form to let "
+            + "us know.");
+    }
+  });
