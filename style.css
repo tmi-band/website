@@ -8,11 +8,11 @@ body {
 }
 
 .navigation {
-    background-image: url("tmi.jpeg");
-    background-size: 100% 500px;;
+    background-image: url("tmi.jpg");
+    background-size: 100% 800px;
     background-repeat: no-repeat;
     width: 100%;
-    min-height: 500px;
+    min-height: 800px;
     color: white;
     margin: 0;
 }
