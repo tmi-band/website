@@ -95,6 +95,10 @@ main h1 {
   background-color: lightgray;
 }
 
+.event-table-container h1 {
+  text-align: center;
+}
+
 .event-table {
   border: none;
   font-size: 20px;

@@ -59,7 +59,19 @@ $.ajax({
     crossDomain: "true",
 
     success: function(data) {
-      addEvents("event-table", JSON.parse(data.body).events);
+      currentTime = Date.now();
+      events = JSON.parse(data.body).events;
+
+      function isPastEvent(event) {
+        eventTime = Date.parse(event["start"]);
+        return eventTime < currentTime;
+      }
+
+      upcomingEvents = events.filter(event => !isPastEvent(event));
+      pastEvents = events.filter(event => isPastEvent(event));
+
+      addEvents("event-table", upcomingEvents);
+      addEvents("past-event-table", pastEvents);
     },
     error: function() {
       alert("An error occurred while trying to retrieve the list of events. "
