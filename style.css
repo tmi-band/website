@@ -45,6 +45,24 @@ body {
     width: 50%;
 }
 
+.gallery {
+    background-image: url("handwritten-music.jpeg");
+    background-size: cover;
+    background-position: bottom center;
+    height: 100%;
+    width: 100%;
+    padding: 50px;
+}
+
+.gallery-image-container {
+    text-align: center;
+}
+
+.gallery-image {
+    width: 30%;
+    padding: 30px;
+}
+
 header {
     background: linear-gradient(90deg, Aquamarine, SkyBlue);
     width: 100%;
