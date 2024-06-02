@@ -8,11 +8,10 @@ body {
 }
 
 .navigation {
-    background-image: url("tmi-2022-09.jpg");
-    background-size: 100% 800px;
+    background-image: url("background.jpg");
     background-repeat: no-repeat;
+    background-position: top 100%;
     width: 100%;
-    min-height: 800px;
     color: white;
     margin: 0;
 }
@@ -30,6 +29,20 @@ body {
 
 .navigation a {
     color: white;
+}
+
+.band-image-background {
+    background-image: url("background.jpg");
+    background-repoeat: no-repeat;
+    background-position: top 100%;
+    padding: 30px;
+}
+
+.band-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 header {
