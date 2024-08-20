@@ -1,118 +1,121 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Lato', sans-serif;
-    margin: 0;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
 }
 
 .navigation {
-    background-image: url("background.jpg");
-    background-repeat: no-repeat;
-    background-position: top 100%;
-    width: 100%;
-    color: white;
-    margin: 0;
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-position: top 100%;
+  width: 100%;
+  color: white;
+  margin: 0;
 }
 
 .navigation ul {
-    margin: 0;
+  margin: 0;
 }
 
 .navigation li {
-    display: inline;
-    font-size: 30px;
-    margin: 10px 50px;
-    opacity: 0.75;
+  display: inline;
+  font-size: 30px;
+  margin: 10px 50px;
+  opacity: 0.75;
 }
 
 .navigation a {
-    color: white;
+  color: white;
 }
 
 .header-background {
-    background-image: url("background.jpg");
-    background-repoeat: no-repeat;
-    background-position: top 100%;
-    padding: 30px;
-}
-
-.header-text {
-    color: white;
-    font-size: 50px;
-    margin-left: 50px;
-}
-
-.band-image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 75%;
-}
-
-.gallery {
-    background-image: url("handwritten-music.jpeg");
-    background-size: cover;
-    background-position: bottom center;
-    height: 100%;
-    width: 100%;
-    padding: 50px;
-}
-
-.gallery-image-container {
-    text-align: center;
-}
-
-.gallery-image {
-    width: 45%;
-    padding: 30px;
-}
-
-header {
-    background: linear-gradient(90deg, Aquamarine, SkyBlue);
-    width: 100%;
-    text-align: center;
+  background-image: url("background.jpg");
+  background-repoeat: no-repeat;
+  background-position: top 100%;
+  padding: 30px;
 }
 
 .band-name {
-    margin: 0;
-    font-size: 50px;
+  color:    #9c640c;
+  font-size: 50px;
+  margin-left: 50px;
+  display: inline
+}
+
+.header-text {
+  color: white;
+  font-size: 50px;
+  margin-left: 50px;
+  display: inline
+}
+
+.band-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 75%;
+}
+
+.gallery {
+  background-image: url("handwritten-music.jpeg");
+  background-size: cover;
+  background-position: bottom center;
+  height: 100%;
+  width: 100%;
+  padding: 50px;
+}
+
+.gallery-image-container {
+  text-align: center;
+}
+
+.gallery-image {
+  width: 45%;
+  padding: 30px;
+}
+
+header {
+  background: linear-gradient(90deg, Aquamarine, SkyBlue);
+  width: 100%;
+  text-align: center;
 }
 
 header a {
-    color: black;
-    font-size: 30px;
+  color: black;
+  font-size: 30px;
 }
 
 .demo {
-    background-image: url("handwritten-music.jpeg");
-    background-size: cover;
-    background-position: bottom center;
-    height: 100%;
-    width: 100%;
-    padding: 50px;
+  background-image: url("handwritten-music.jpeg");
+  background-size: cover;
+  background-position: bottom center;
+  height: 100%;
+  width: 100%;
+  padding: 50px;
 }
 
 main h1 {
-    margin: 0;
+  margin: 0;
 }
 
 .demo-video-container {
-    text-align: center;
+  text-align: center;
 }
 
 .demo-video {
-    width: 640px;
-    height: 480px;
-    margin: auto auto;
+  width: 640px;
+  height: 480px;
+  margin: auto auto;
 }
 
 .band-summary {
-    font-size: 40px;
-    text-align: center;
-    max-width: 900px;
-    margin: 0 auto;
+  font-size: 40px;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .roles {
