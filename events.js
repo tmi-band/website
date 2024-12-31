@@ -68,7 +68,7 @@ $.ajax({
       }
 
       upcomingEvents = events.filter(event => !isPastEvent(event));
-      pastEvents = events.filter(event => isPastEvent(event));
+      pastEvents = events.filter(event => isPastEvent(event)).reverse();
 
       addEvents("event-table", upcomingEvents);
       addEvents("past-event-table", pastEvents);
