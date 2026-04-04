@@ -65,10 +65,10 @@ a:hover {
   left: 0;
   right: 0;
   height: var(--nav-height);
-  background: rgba(26, 26, 26, 0.95);
+  background: rgba(250, 247, 242, 0.95);
   backdrop-filter: blur(10px);
   z-index: 1000;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid var(--color-border);
   transition: background 0.3s;
 }
 
@@ -712,7 +712,7 @@ footer a:hover {
     top: var(--nav-height);
     left: 0;
     right: 0;
-    background: rgba(26, 26, 26, 0.98);
+    background: rgba(250, 247, 242, 0.98);
     flex-direction: column;
     align-items: center;
     gap: 0;
