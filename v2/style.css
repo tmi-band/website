@@ -496,14 +496,14 @@ a:hover {
 
 .gallery-grid img:hover {
   transform: scale(1.03);
-  opacity: 0.85;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Lightbox */
 .lightbox {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.95);
+  background: rgba(0, 0, 0, 0.9);
   z-index: 2000;
   display: flex;
   align-items: center;
@@ -584,7 +584,7 @@ a:hover {
 
 /* ===== Mailing List Section ===== */
 .mailing-list-section {
-  background: linear-gradient(135deg, #2a1f10 0%, #1a1a1a 100%);
+  background: linear-gradient(135deg, #f3ece0 0%, #faf7f2 100%);
   text-align: center;
 }
 
@@ -602,7 +602,7 @@ a:hover {
   min-width: 200px;
   padding: 14px 16px;
   background: var(--color-surface);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--color-border);
   border-radius: 4px;
   color: var(--color-text);
   font-family: var(--font-body);
@@ -645,7 +645,7 @@ a:hover {
   width: 100%;
   padding: 14px 16px;
   background: var(--color-surface);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--color-border);
   border-radius: 4px;
   color: var(--color-text);
   font-family: var(--font-body);
@@ -672,10 +672,10 @@ a:hover {
 
 /* ===== Footer ===== */
 footer {
-  background: var(--color-bg);
+  background: var(--color-footer-bg);
   padding: 40px 0;
   text-align: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-top: none;
 }
 
 .footer-logo {
@@ -687,13 +687,13 @@ footer {
 }
 
 footer p {
-  color: var(--color-text-muted);
+  color: var(--color-footer-text);
   font-size: 0.85rem;
   margin-bottom: 8px;
 }
 
 footer a {
-  color: var(--color-text-muted);
+  color: var(--color-footer-text);
 }
 
 footer a:hover {
