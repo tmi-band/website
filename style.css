@@ -588,32 +588,6 @@ a:hover {
   text-align: center;
 }
 
-.mailing-list-form {
-  display: flex;
-  gap: 12px;
-  max-width: 600px;
-  margin: 0 auto;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.mailing-list-form input {
-  flex: 1;
-  min-width: 200px;
-  padding: 14px 16px;
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: 4px;
-  color: var(--color-text);
-  font-family: var(--font-body);
-  font-size: 0.95rem;
-}
-
-.mailing-list-form input:focus {
-  outline: none;
-  border-color: var(--color-accent);
-}
-
 /* ===== Contact Section ===== */
 .contact-form {
   max-width: 700px;

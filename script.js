@@ -155,25 +155,6 @@ contactForm.addEventListener('submit', function(e) {
     });
 });
 
-// ===== Mailing List Form =====
-const mlForm = document.getElementById('mailing-list-form');
-
-mlForm.addEventListener('submit', function(e) {
-  e.preventDefault();
-
-  const name = document.getElementById('ml-name').value.trim();
-  const email = document.getElementById('ml-email').value.trim();
-
-  if (!name || !email) return;
-
-  // Placeholder: wire this up to your mailing list backend
-  mlForm.reset();
-  document.getElementById('ml-success').style.display = 'block';
-  setTimeout(() => {
-    document.getElementById('ml-success').style.display = 'none';
-  }, 5000);
-});
-
 // ===== Gallery Lightbox =====
 const galleryImages = document.querySelectorAll('.gallery-grid img');
 const lightbox = document.getElementById('lightbox');

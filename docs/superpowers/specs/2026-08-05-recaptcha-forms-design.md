@@ -1,7 +1,11 @@
 # reCAPTCHA on the Subscription and Contact Forms
 
 **Date:** 2026-08-05
-**Status:** Approved, ready for planning
+**Status:** Split into two pieces of work.
+
+- **§1, mailing list — implemented.** Shipped separately as a small self-contained change.
+- **§2-§6, contact form + Lambda — approved, not started.** Blocked on the reCAPTCHA v2
+  site key. Nothing in §1 depends on it.
 
 ## Problem
 
