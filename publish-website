@@ -1,6 +1,0 @@
-#!/bin/bash
-
-set -e
-
-cd ~/src/tmi-band/website
-aws s3 sync --exclude '.*' --exclude 'publish-website' . s3://tmi-band.net/
