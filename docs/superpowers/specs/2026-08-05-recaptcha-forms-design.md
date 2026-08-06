@@ -72,17 +72,21 @@ used by the contact form.
 The section keeps its heading and subtitle; the Subscribe control becomes a link:
 
 ```html
-<a href="https://tmi-band-tucson.us18.list-manage.com/subscribe?u=e3d5f089e937d695af2af32b6&amp;id=d41aa5c4d0"
+<a href="https://mailchi.mp/2fb80e73067c/sign-up"
    class="btn btn-primary" target="_blank" rel="noopener">Subscribe</a>
 ```
 
-That URL is the `master` embed's action URL with `/post` removed — the hosted-page form for
-the same list. It is **derived, not read from the Mailchimp account**, and must be confirmed
-to load before this ships.
+This is the published Mailchimp hosted signup page, supplied by the owner and confirmed to
+load (heading: "Receive Band Updates"). It supersedes the `list-manage.com/subscribe` URL
+originally derived from the `master` embed.
 
 The reCAPTCHA here is a Mailchimp account setting, not code (Audience → Signup forms → Form
 builder). **Nothing in this repo enforces it.** The site change alone does not stop the spam
 until that setting is enabled.
+
+Whether reCAPTCHA is currently enabled on that page is **unverified**: Mailchimp injects the
+widget client-side, so it cannot be confirmed by fetching the page HTML. It must be checked
+by loading the page in a browser.
 
 ### 2. Contact form — frontend
 
@@ -241,8 +245,8 @@ is manual and specific:
    Expect `{"result":"error","reason":"captcha"}` and no email. This is the actual spam
    path; it is what distinguishes a working fix from one that merely looks like protection.
 
-6. **Mailing list** — confirm the Subscribe link loads the hosted form and that the
-   reCAPTCHA appears on it.
+6. **Mailing list** — click the Subscribe link and confirm, **in a browser**, that the
+   hosted form loads and the reCAPTCHA checkbox is visibly present on it.
 
 ## Prerequisites (owner actions, outside this repo)
 
@@ -251,8 +255,11 @@ is manual and specific:
    domain-locked: testing on an unregistered `*.ondigitalocean.app` URL renders
    "ERROR for site owner: Invalid domain for site key".
 2. Set `RECAPTCHA_SECRET` on the `send-contact-email` Lambda.
-3. Enable reCAPTCHA on the Mailchimp hosted form.
-4. Confirm the hosted form URL in §1 loads.
+3. Enable reCAPTCHA on the Mailchimp hosted form, and confirm in a browser that the checkbox
+   actually renders. This is the step that stops the spam — the site change only routes
+   people to the form.
+4. ~~Confirm the hosted form URL~~ — done. Published at
+   `https://mailchi.mp/2fb80e73067c/sign-up`.
 
 The **site key** (public) is needed before the frontend is complete. The **secret key** never
 enters git.
